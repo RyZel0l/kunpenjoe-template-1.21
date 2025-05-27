@@ -1,5 +1,7 @@
 package net.cash.tutorial;
 
+import net.cash.tutorial.block.ModBlocks;
+import net.cash.tutorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,8 @@ public class Kunpenjoe implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 	}
 }
